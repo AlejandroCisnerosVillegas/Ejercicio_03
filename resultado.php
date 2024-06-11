@@ -1,11 +1,9 @@
 <?php
-
 	$primeranota = $_POST['CajaNota1'];
 	$segundanota = $_POST['CajaNota2'];
 	$terceranota = $_POST['CajaNota3'];
 	$media = round(($primeranota+$segundanota+$terceranota)/3,0);
 	$mensaje = "";
-	
 	if(($media>=0) && ($media<=5))
 	{
 		$mensaje = "Muy mal";
@@ -22,10 +20,8 @@
 	{
 		$mensaje = "Excelente";
 	}
-
 		echo "La primera nota fue: <b>$primeranota</b><br>";
 		echo "La segunda nota fue: <b>$segundanota</b><br>";
 		echo "La tercera nota fue: <b>$terceranota</b><br>";
 		echo "La media de las tres notas es: <b>$media - $mensaje</b>";
-
 ?> 
